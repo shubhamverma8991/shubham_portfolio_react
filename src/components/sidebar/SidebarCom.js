@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import personDetails from "../../assets/info/personalDetail.json";
 import image from "../../assets/images/my-avatar.png";
 import "ionicons";
 
 export default function SidebarCom() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
   return (
     <div>
-      <aside className="sidebar" data-sidebar>
+      <aside className={`sidebar ${isSidebarOpen ? "active" : ""}`} data-sidebar>
         <div className="sidebar-info">
           <figure className="avatar-box">
             <img src={image} alt={personDetails.name} width="80" />
@@ -20,10 +25,10 @@ export default function SidebarCom() {
             <p className="title">{personDetails.title}</p>
           </div>
 
-          <button className="info_more-btn" data-sidebar-btn>
+          <button className="info_more-btn" data-sidebar-btn onClick={toggleSidebar}>
             <span>Show Contacts</span>
 
-            <ion-icon name="chevron-down"></ion-icon>
+            {/* <ion-icon name="chevron-down"></ion-icon> */}
           </button>
         </div>
 
