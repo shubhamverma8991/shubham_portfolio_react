@@ -180,7 +180,7 @@ article {
 }
 
 article {
-  display: none;
+  /* display: none; */
 }
 
 article.active {
@@ -793,6 +793,9 @@ main {
   gap: 15px;
   margin-bottom: 25px;
 }
+.just_space_btw {
+  justify-content: space-between;
+}
 
 .timeline-list {
   font-size: var(--fs-6);
@@ -844,6 +847,20 @@ main {
 .timeline-text {
   color: var(--light-gray);
   font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+.timeline-text > li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 5px;
+}
+
+.timeline-text > li::before {
+  content: "•";
+  color: var(--vegas-gold);
+  position: absolute;
+  left: 0;
+  font-size: 1.2em;
   line-height: 1.6;
 }
 
