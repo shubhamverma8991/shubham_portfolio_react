@@ -29,17 +29,6 @@ export default function About() {
           <h3 className="h3 service-title">What i'm doing</h3>
 
           <ul className="service-list">
-            {/* <li className="service-item">
-              <div className="service-icon-box">
-                <img src={design} alt="design icon" width="40" />
-              </div>
-
-              <div className="service-content-box">
-                <h4 className="h4 service-item-title">Web design</h4>
-                <p className="service-item-text">The most modern and high-quality design made at a professional level.</p>
-              </div>
-            </li> */}
-
             <li className="service-item">
               <div className="service-icon-box">
                 <img src={webDevelopment} alt="Web development icon" width="40" />
@@ -48,6 +37,16 @@ export default function About() {
               <div className="service-content-box">
                 <h4 className="h4 service-item-title">Web development</h4>
                 <p className="service-item-text">High-quality development of sites at the professional level.</p>
+              </div>
+            </li>
+            <li className="service-item">
+              <div className="service-icon-box">
+                <img src={design} alt="design icon" width="40" />
+              </div>
+
+              <div className="service-content-box">
+                <h4 className="h4 service-item-title">Responsive Websites</h4>
+                <p className="service-item-text">Convert a website to be accessible on any device.</p>
               </div>
             </li>
           </ul>
@@ -78,7 +77,7 @@ export default function About() {
 
         {/* testimonials modal */}
 
-        <div className="modal-container" data-modal-container>
+        {/* <div className="modal-container" data-modal-container>
           <div className="overlay" data-overlay></div>
 
           <section className="testimonials-modal">
@@ -106,51 +105,51 @@ export default function About() {
               </div>
             </div>
           </section>
-        </div>
+        </div> */}
 
         {/* Clients */}
 
-        <section className="clients">
+        {/* <section className="clients">
           <h3 className="h3 clients-title">Clients</h3>
 
           <ul className="clients-list has-scrollbar">
             <li className="clients-item">
               <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo" />
+                <img src="../assets/images/logo-1-color.png" alt="client logo" />
               </a>
             </li>
 
             <li className="clients-item">
               <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo" />
+                <img src="../assets/images/logo-2-color.png" alt="client logo" />
               </a>
             </li>
 
             <li className="clients-item">
               <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo" />
+                <img src="../assets/images/logo-3-color.png" alt="client logo" />
               </a>
             </li>
 
             <li className="clients-item">
               <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo" />
+                <img src="../assets/images/logo-4-color.png" alt="client logo" />
               </a>
             </li>
 
             <li className="clients-item">
               <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo" />
+                <img src="../assets/images/logo-5-color.png" alt="client logo" />
               </a>
             </li>
 
             <li className="clients-item">
               <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo" />
+                <img src="../assets/images/logo-6-color.png" alt="client logo" />
               </a>
             </li>
           </ul>
-        </section>
+        </section> */}
       </article>
     </>
   );

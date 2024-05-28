@@ -22,7 +22,7 @@ export default function Resume() {
               <h4 className="h4 timeline-item-title">
                 Refactor Academy Pvt Ltd.
                 <span>Software Development Engineer -2 (FED)</span>
-                <span>July 2023 — April 2024</span>
+                <span>July 2023 — Present</span>
               </h4>
 
               <ul className="timeline-text">
