@@ -1,4 +1,6 @@
 import React from "react";
+import project1 from "../assets/images/project-1.png";
+import project2 from "../assets/images/project-2.png";
 
 export default function Portfolio() {
   return (
@@ -9,7 +11,7 @@ export default function Portfolio() {
         </header>
 
         <section className="projects">
-          <ul className="filter-list">
+          {/* <ul className="filter-list">
             <li className="filter-item">
               <button className="active" data-filter-btn>
                 All
@@ -27,9 +29,9 @@ export default function Portfolio() {
             <li className="filter-item">
               <button data-filter-btn>Web development</button>
             </li>
-          </ul>
+          </ul> */}
 
-          <div className="filter-select-box">
+          {/* <div className="filter-select-box">
             <button className="filter-select" data-select>
               <div className="select-value" data-selecct-value>
                 Select category
@@ -57,36 +59,36 @@ export default function Portfolio() {
                 <button data-select-item>Web development</button>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           <ul className="project-list">
             <li className="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+              <a target="_blank" href="https://shubhamhere.netlify.app">
                 <figure className="project-img">
                   <div className="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy" />
+                  <img src={project1} alt="portfolio" loading="lazy" />
                 </figure>
 
-                <h3 className="project-title">Finance</h3>
+                <h3 className="project-title">Personal Portfolio</h3>
 
                 <p className="project-category">Web development</p>
               </a>
             </li>
 
             <li className="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+              <a target="_blank" href="https://bhoji.netlify.app">
                 <figure className="project-img">
                   <div className="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy" />
+                  <img src={project2} alt="bhoji" loading="lazy" />
                 </figure>
 
-                <h3 className="project-title">Orizon</h3>
+                <h3 className="project-title">Bhoji Enterprises</h3>
 
                 <p className="project-category">Web development</p>
               </a>
